@@ -53,6 +53,8 @@ class CreditRepositoryTest {
         //then
         Assertions.assertThat(fakeCredit1).isNotNull
         Assertions.assertThat(fakeCredit2).isNotNull
+        Assertions.assertThat(fakeCredit1).isSameAs(credit1)
+        Assertions.assertThat(fakeCredit2).isSameAs(credit2)
     }
 
     private fun buildCredit(
